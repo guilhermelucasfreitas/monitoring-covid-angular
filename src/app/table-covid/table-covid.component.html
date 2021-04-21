@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card">
+      <div class="">
+        <div class="title">Covid cases in the world</div>
+      </div>
+      <div class="card-content">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <table class="table is-hoverable">
+              <thead>
+                <th *ngFor="let column of headers">
+                  {{column}}
+                </th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let country of countries">
+                  <th>{{country.country}}</th>
+                  <th>{{country.cases}}</th>
+                  <th>{{country.deaths}}</th>
+                  <th>{{country.todayCases}}</th>
+                  <th>{{country.todayDeaths}}</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
